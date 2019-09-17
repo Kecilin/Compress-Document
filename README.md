@@ -21,6 +21,34 @@ Kecilin.asFile("destrinationPath", "Filename");
 Kecilin.asFile("destrinationPath");
 ```
 
+## Code Video
+```Java
+KecilinVideo.compressVideoLow(inputPath, destPath, new KecilinVideo.CompressListener() {
+                        @Override
+                        public void onStart() {
+                        }
+
+                        @Override
+                        public void onSuccess() {
+                        }
+
+                        @Override
+                        public void onFail() {
+                        }
+
+                        @Override
+                        public void onProgress(float percent) {
+                        }
+                    });
+```
+
+You can use Low Medium High for quality Compress Level
+```Java
+KecilinVideo.compressVideoLow();
+KecilinVideo.compressVideoMedium();
+KecilinVideo.compressVideoHigh();
+```
+
 ## Installation Instructions
 
 Step 1. Authorize JitPack and get your personal access token: <br><br>
